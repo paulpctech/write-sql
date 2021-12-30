@@ -1,0 +1,1 @@
+SELECT * FROM PersonProfile INNER JOIN lib_region ON lib_region.region_code = PersonProfile.region_code INNER JOIN isVolunteerTable ON PersonProfile.PersonProfileId = IsVolunteerTable.PersonProfileId INNER JOIN lib_cycle ON lib_cycle.cycle_id = IsVolunteerTable.cycle_id WHERE PersonProfile.region_code = '050000000 ' or lib_region.region_name = 'REGION V [Bicol Region]';
